@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-project(stb-image)
-add_library(stb::image ALIAS stb-image "src/stb_image.c")
+project(stb)
+add_library(stb-image "src/stb_image.c")
+add_library(stb::image ALIAS stb-image)
 target_include_directories(stb-image PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
