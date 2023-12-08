@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
 project(stb)
 if (BUILD_SHARED_LIBS)
-    add_library(stb-image SHARED "src/stb_image.c")
+    add_library(stb-image STATIC "src/stb_image.c")
 else()
     add_library(stb-image STATIC "src/stb_image.c")
 endif()
